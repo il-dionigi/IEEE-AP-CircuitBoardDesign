@@ -8712,6 +8712,110 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="DMN3009LFVW">
+<packages>
+<package name="SOT23-5">
+<smd name="S@0" x="-0.975" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="S@1" x="-0.325" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="S@2" x="0.325" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="G" x="0.975" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="D@1" x="-0.96" y="1.48" dx="0.42" dy="0.7" layer="1"/>
+<polygon width="0.127" layer="1">
+<vertex x="-1.3" y="-0.6"/>
+<vertex x="1.3" y="-0.6"/>
+<vertex x="1.3" y="-0.2"/>
+<vertex x="1.75" y="-0.2"/>
+<vertex x="1.75" y="0.2"/>
+<vertex x="1.3" y="0.2"/>
+<vertex x="1.3" y="1.3"/>
+<vertex x="1.185" y="1.3"/>
+<vertex x="1.185" y="1.85"/>
+<vertex x="0.765" y="1.85"/>
+<vertex x="0.765" y="1.3"/>
+<vertex x="0.535" y="1.3"/>
+<vertex x="0.535" y="1.85"/>
+<vertex x="0.115" y="1.85"/>
+<vertex x="0.115" y="1.3"/>
+<vertex x="-0.115" y="1.3"/>
+<vertex x="-0.115" y="1.85"/>
+<vertex x="-0.535" y="1.85"/>
+<vertex x="-0.535" y="1.3"/>
+<vertex x="-0.765" y="1.3"/>
+<vertex x="-0.765" y="1.85"/>
+<vertex x="-1.185" y="1.85"/>
+<vertex x="-1.185" y="1.3"/>
+<vertex x="-1.3" y="1.3"/>
+<vertex x="-1.3" y="0.2"/>
+<vertex x="-1.75" y="0.2"/>
+<vertex x="-1.75" y="-0.2"/>
+<vertex x="-1.3" y="-0.2"/>
+</polygon>
+<wire x1="-1.525" y1="1.525" x2="-1.525" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="-1.525" y1="-1.525" x2="1.525" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="1.525" y1="-1.525" x2="1.525" y2="1.525" width="0.127" layer="51"/>
+<wire x1="1.525" y1="1.525" x2="-1.525" y2="1.525" width="0.127" layer="51"/>
+<wire x1="1.535" y1="-0.4" x2="1.535" y2="-1.535" width="0.2032" layer="21"/>
+<wire x1="1.535" y1="-1.535" x2="1.3" y2="-1.535" width="0.2032" layer="21"/>
+<wire x1="1.535" y1="0.4" x2="1.535" y2="1.535" width="0.2032" layer="21"/>
+<wire x1="1.535" y1="1.535" x2="1.4" y2="1.535" width="0.2032" layer="21"/>
+<wire x1="-1.535" y1="-0.4" x2="-1.535" y2="-1.535" width="0.2032" layer="21"/>
+<wire x1="-1.535" y1="-1.535" x2="-1.3" y2="-1.535" width="0.2032" layer="21"/>
+<text x="-1.5" y="2.2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.4" y="-3.3" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="D@0" x="-1.41" y="0.01" dx="0.42" dy="0.7" layer="1" rot="R90"/>
+<smd name="D@4" x="0.96" y="1.48" dx="0.42" dy="0.7" layer="1"/>
+<smd name="D@3" x="0.31" y="1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="D@2" x="-0.31" y="1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="D@5" x="1.41" y="0.01" dx="0.42" dy="0.7" layer="1" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DMN3009LFVW">
+<pin name="D@0" x="0" y="15.24" length="middle" rot="R270"/>
+<pin name="D@5" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="D@2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="D@3" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="D@4" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="D@1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="S@0" x="-15.24" y="7.62" length="middle"/>
+<pin name="S@1" x="-15.24" y="2.54" length="middle"/>
+<pin name="S@2" x="-15.24" y="-2.54" length="middle"/>
+<pin name="G" x="-15.24" y="-7.62" length="middle"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10" y="-13" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10" y="11" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DMN3009LFVW">
+<gates>
+<gate name="G$1" symbol="DMN3009LFVW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="7" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="D@0" pad="D@0"/>
+<connect gate="G$1" pin="D@1" pad="D@1"/>
+<connect gate="G$1" pin="D@2" pad="D@2"/>
+<connect gate="G$1" pin="D@3" pad="D@3"/>
+<connect gate="G$1" pin="D@4" pad="D@4"/>
+<connect gate="G$1" pin="D@5" pad="D@5"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S@0" pad="S@0"/>
+<connect gate="G$1" pin="S@1" pad="S@1"/>
+<connect gate="G$1" pin="S@2" pad="S@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8737,6 +8841,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R_VD2" library="rcl" deviceset="R-US_" device="R0603" value="100kΩ"/>
 <part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
 <part name="U2" library="MPU-6050" deviceset="MPU-6050" device=""/>
+<part name="U$3" library="DMN3009LFVW" deviceset="DMN3009LFVW" device="7"/>
 </parts>
 <sheets>
 <sheet>
@@ -8758,6 +8863,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R_VD2" gate="G$1" x="53.34" y="73.66"/>
 <instance part="U$2" gate="G$1" x="-12.7" y="15.24"/>
 <instance part="U2" gate="G$1" x="132.08" y="78.74"/>
+<instance part="U$3" gate="G$1" x="17.78" y="-12.7"/>
 </instances>
 <busses>
 </busses>
