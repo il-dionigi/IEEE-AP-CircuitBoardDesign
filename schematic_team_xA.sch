@@ -8816,6 +8816,58 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FC3BACAG">
+<packages>
+<package name="SOT23-5">
+<smd name="1" x="-1.05" y="-0.95" dx="1.3" dy="1.3" layer="1"/>
+<smd name="2" x="1.05" y="-0.95" dx="1.3" dy="1.3" layer="1"/>
+<smd name="3" x="1.05" y="0.95" dx="1.3" dy="1.3" layer="1"/>
+<smd name="4" x="-1.05" y="0.95" dx="1.3" dy="1.3" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-1.25" x2="0.3" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-0.2" x2="1.6" y2="0.2" width="0.2032" layer="21"/>
+<text x="-3.1" y="1.9" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.4" y="-3.1" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="C3BA">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="4" x="-17.78" y="5.08"/>
+<pin name="1" x="-17.78" y="-5.08"/>
+<pin name="3" x="17.78" y="5.08" rot="R180"/>
+<pin name="2" x="17.78" y="-5.08" rot="R180"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FC3BACA">
+<gates>
+<gate name="G$1" symbol="C3BA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="G" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8842,6 +8894,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
 <part name="U2" library="MPU-6050" deviceset="MPU-6050" device=""/>
 <part name="U$3" library="DMN3009LFVW" deviceset="DMN3009LFVW" device="7"/>
+<part name="U$4" library="FC3BACAG" deviceset="FC3BACA" device="G"/>
 </parts>
 <sheets>
 <sheet>
@@ -8864,6 +8917,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="U$2" gate="G$1" x="-12.7" y="15.24"/>
 <instance part="U2" gate="G$1" x="132.08" y="78.74"/>
 <instance part="U$3" gate="G$1" x="17.78" y="-12.7"/>
+<instance part="U$4" gate="G$1" x="58.42" y="-12.7"/>
 </instances>
 <busses>
 </busses>
