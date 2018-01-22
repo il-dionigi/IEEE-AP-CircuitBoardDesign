@@ -8835,16 +8835,16 @@ Source: AVX .. aphvc.pdf</description>
 </packages>
 <symbols>
 <symbol name="C3BA">
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="4" x="-17.78" y="5.08"/>
-<pin name="1" x="-17.78" y="-5.08"/>
-<pin name="3" x="17.78" y="5.08" rot="R180"/>
-<pin name="2" x="17.78" y="-5.08" rot="R180"/>
-<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="4" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="1" x="-7.62" y="-2.54" length="short"/>
+<pin name="3" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<text x="-5.08" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8894,9 +8894,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
 <part name="U2" library="MPU-6050" deviceset="MPU-6050" device=""/>
 <part name="U$3" library="DMN3009LFVW" deviceset="DMN3009LFVW" device="7"/>
-<part name="U$4" library="FC3BACAG" deviceset="FC3BACA" device="G"/>
 <part name="C_OSC1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="17pF"/>
 <part name="C_OSC2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="17pF"/>
+<part name="CRYSTAL" library="FC3BACAG" deviceset="FC3BACA" device="G"/>
 </parts>
 <sheets>
 <sheet>
@@ -8919,13 +8919,54 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="U$2" gate="G$1" x="-12.7" y="15.24"/>
 <instance part="U2" gate="G$1" x="132.08" y="78.74"/>
 <instance part="U$3" gate="G$1" x="17.78" y="-12.7"/>
-<instance part="U$4" gate="G$1" x="81.28" y="-17.78"/>
-<instance part="C_OSC1" gate="G$1" x="22.86" y="43.18" rot="R270"/>
-<instance part="C_OSC2" gate="G$1" x="22.86" y="35.56" rot="R270"/>
+<instance part="C_OSC1" gate="G$1" x="25.4" y="43.18" rot="R270"/>
+<instance part="C_OSC2" gate="G$1" x="25.4" y="10.16" rot="R270"/>
+<instance part="CRYSTAL" gate="G$1" x="33.02" y="22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="(PCINT6/XTAL1/TOSC1)_PB6"/>
+<wire x1="53.34" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="30.48" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C_OSC1" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+<junction x="30.48" y="43.18"/>
+<pinref part="CRYSTAL" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="(PCINT7/XTAL2/TOSC2)_PB7"/>
+<wire x1="53.34" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C_OSC2" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="15.24" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
+<junction x="35.56" y="10.16"/>
+<pinref part="CRYSTAL" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="C_OSC2" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="10.16" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="43.18" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="48.26" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="GND_3"/>
+<wire x1="45.72" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C_OSC1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+<junction x="17.78" y="43.18"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

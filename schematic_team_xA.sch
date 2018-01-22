@@ -8540,65 +8540,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="TI-LM2665M6">
-<packages>
-<package name="SOT23-5">
-<smd name="1" x="-1.2" y="0.95" dx="0.6" dy="0.5" layer="1"/>
-<smd name="2" x="-1.2" y="0" dx="0.6" dy="0.5" layer="1"/>
-<smd name="3" x="-1.2" y="-0.95" dx="0.6" dy="0.5" layer="1"/>
-<smd name="4" x="1.2" y="-0.95" dx="0.6" dy="0.5" layer="1"/>
-<smd name="5" x="1.2" y="0" dx="0.6" dy="0.5" layer="1"/>
-<smd name="6" x="1.2" y="0.95" dx="0.6" dy="0.5" layer="1"/>
-<wire x1="-0.875" y1="1.525" x2="-0.875" y2="-1.525" width="0.127" layer="51"/>
-<wire x1="-0.875" y1="-1.525" x2="0.875" y2="-1.525" width="0.127" layer="51"/>
-<wire x1="0.875" y1="-1.525" x2="0.875" y2="1.525" width="0.127" layer="51"/>
-<wire x1="0.875" y1="1.525" x2="-0.875" y2="1.525" width="0.127" layer="51"/>
-<wire x1="-0.875" y1="-1.525" x2="0.875" y2="-1.525" width="0.2032" layer="21"/>
-<wire x1="0.875" y1="-1.525" x2="0.875" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.875" y1="1.525" x2="0.875" y2="1.525" width="0.2032" layer="21"/>
-<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="LM2665M6">
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<pin name="OUT" x="12.7" y="7.62" length="middle" rot="R180"/>
-<pin name="SD" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-7.62" length="middle" rot="R180"/>
-<pin name="V+" x="-12.7" y="7.62" length="middle"/>
-<pin name="CAP+" x="-12.7" y="0" length="middle"/>
-<pin name="CAP-" x="-12.7" y="-7.62" length="middle"/>
-<text x="-7.06" y="-15.03" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-7.06" y="13" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TI-LM2665">
-<gates>
-<gate name="G$1" symbol="LM2665M6" x="0" y="0"/>
-</gates>
-<devices>
-<device name="M6" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="CAP+" pad="2"/>
-<connect gate="G$1" pin="CAP-" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="OUT" pad="6"/>
-<connect gate="G$1" pin="SD" pad="5"/>
-<connect gate="G$1" pin="V+" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MPU-6050">
 <packages>
 <package name="QFN50P400X400X95-25N">
@@ -8834,15 +8775,13 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="C3BA">
+<symbol name="FC3BACA">
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="4" x="-7.62" y="2.54" visible="off" length="short"/>
 <pin name="1" x="-7.62" y="-2.54" length="short"/>
 <pin name="3" x="7.62" y="2.54" length="short" rot="R180"/>
-<pin name="2" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <text x="-5.08" y="6.35" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -8850,15 +8789,105 @@ Source: AVX .. aphvc.pdf</description>
 <devicesets>
 <deviceset name="FC3BACA">
 <gates>
-<gate name="G$1" symbol="C3BA" x="0" y="0"/>
+<gate name="G$1" symbol="FC3BACA" x="0" y="0"/>
 </gates>
 <devices>
 <device name="G" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="TI-LM2665M6">
+<packages>
+<package name="SOT23-5">
+<smd name="1" x="-1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="2" x="-1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="3" x="-1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="4" x="1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="5" x="1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="6" x="1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<wire x1="-0.875" y1="1.525" x2="-0.875" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="-0.875" y1="-1.525" x2="0.875" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="0.875" y1="-1.525" x2="0.875" y2="1.525" width="0.127" layer="51"/>
+<wire x1="0.875" y1="1.525" x2="-0.875" y2="1.525" width="0.127" layer="51"/>
+<wire x1="-0.875" y1="-1.525" x2="0.875" y2="-1.525" width="0.2032" layer="21"/>
+<wire x1="0.875" y1="-1.525" x2="0.875" y2="-1.439315625" width="0.2032" layer="21"/>
+<wire x1="-0.875" y1="1.525" x2="0.875" y2="1.525" width="0.2032" layer="21"/>
+<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LM2665M6">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="OUT" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="SD" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="V+" x="-12.7" y="7.62" length="middle"/>
+<pin name="CAP+" x="-12.7" y="0" length="middle"/>
+<pin name="CAP-" x="-12.7" y="-7.62" length="middle"/>
+<text x="-7.06" y="-15.03" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.06" y="13" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TI-LM2665">
+<gates>
+<gate name="G$1" symbol="LM2665M6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M6" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="CAP+" pad="2"/>
+<connect gate="G$1" pin="CAP-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="SD" pad="5"/>
+<connect gate="G$1" pin="V+" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8891,12 +8920,14 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C_BAT" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="100μF"/>
 <part name="R_VD1" library="rcl" deviceset="R-US_" device="R0603" value="100kΩ"/>
 <part name="R_VD2" library="rcl" deviceset="R-US_" device="R0603" value="100kΩ"/>
-<part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
 <part name="U2" library="MPU-6050" deviceset="MPU-6050" device=""/>
 <part name="U$3" library="DMN3009LFVW" deviceset="DMN3009LFVW" device="7"/>
 <part name="C_OSC1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="17pF"/>
 <part name="C_OSC2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="17pF"/>
 <part name="CRYSTAL" library="FC3BACAG" deviceset="FC3BACA" device="G"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="C_DEC" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="0.1μF"/>
+<part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
 </parts>
 <sheets>
 <sheet>
@@ -8916,12 +8947,14 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C_BAT" gate="G$1" x="93.98" y="81.28"/>
 <instance part="R_VD1" gate="G$1" x="53.34" y="81.28"/>
 <instance part="R_VD2" gate="G$1" x="53.34" y="73.66"/>
-<instance part="U$2" gate="G$1" x="-12.7" y="15.24"/>
 <instance part="U2" gate="G$1" x="132.08" y="78.74"/>
 <instance part="U$3" gate="G$1" x="17.78" y="-12.7"/>
 <instance part="C_OSC1" gate="G$1" x="25.4" y="43.18" rot="R270"/>
 <instance part="C_OSC2" gate="G$1" x="25.4" y="10.16" rot="R270"/>
 <instance part="CRYSTAL" gate="G$1" x="33.02" y="22.86" rot="R90"/>
+<instance part="GND1" gate="1" x="195.58" y="-7.62"/>
+<instance part="C_DEC" gate="G$1" x="195.58" y="5.08"/>
+<instance part="U$2" gate="G$1" x="-10.16" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -8932,11 +8965,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="53.34" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="30.48" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="30.48" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C_OSC1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<junction x="30.48" y="43.18"/>
 <pinref part="CRYSTAL" gate="G$1" pin="3"/>
+<wire x1="30.48" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+<junction x="30.48" y="43.18"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8946,10 +8979,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="43.18" y1="27.94" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C_OSC2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="CRYSTAL" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="15.24" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
 <junction x="35.56" y="10.16"/>
-<pinref part="CRYSTAL" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8965,6 +8998,21 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C_OSC1" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
 <junction x="17.78" y="43.18"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="AREF"/>
+<pinref part="C_DEC" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="15.24" x2="195.58" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="15.24" x2="195.58" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="C_DEC" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="-5.08" x2="195.58" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

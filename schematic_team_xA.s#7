@@ -8540,6 +8540,178 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="TI-LM2665M6">
+<packages>
+<package name="SOT23-5">
+<smd name="1" x="-1.2" y="0.95" dx="0.6" dy="0.5" layer="1"/>
+<smd name="2" x="-1.2" y="0" dx="0.6" dy="0.5" layer="1"/>
+<smd name="3" x="-1.2" y="-0.95" dx="0.6" dy="0.5" layer="1"/>
+<smd name="4" x="1.2" y="-0.95" dx="0.6" dy="0.5" layer="1"/>
+<smd name="5" x="1.2" y="0" dx="0.6" dy="0.5" layer="1"/>
+<smd name="6" x="1.2" y="0.95" dx="0.6" dy="0.5" layer="1"/>
+<wire x1="-0.875" y1="1.525" x2="-0.875" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="-0.875" y1="-1.525" x2="0.875" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="0.875" y1="-1.525" x2="0.875" y2="1.525" width="0.127" layer="51"/>
+<wire x1="0.875" y1="1.525" x2="-0.875" y2="1.525" width="0.127" layer="51"/>
+<wire x1="-0.875" y1="-1.525" x2="0.875" y2="-1.525" width="0.2032" layer="21"/>
+<wire x1="0.875" y1="-1.525" x2="0.875" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.875" y1="1.525" x2="0.875" y2="1.525" width="0.2032" layer="21"/>
+<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LM2665M6">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="OUT" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="SD" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="V+" x="-12.7" y="7.62" length="middle"/>
+<pin name="CAP+" x="-12.7" y="0" length="middle"/>
+<pin name="CAP-" x="-12.7" y="-7.62" length="middle"/>
+<text x="-7.06" y="-15.03" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.06" y="13" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TI-LM2665">
+<gates>
+<gate name="G$1" symbol="LM2665M6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M6" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="CAP+" pad="2"/>
+<connect gate="G$1" pin="CAP-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="SD" pad="5"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="MPU-6050">
+<packages>
+<package name="QFN50P400X400X95-25N">
+<rectangle x1="-0.882078125" y1="-0.831959375" x2="0.88" y2="0.83" layer="31"/>
+<wire x1="1.7" y1="2" x2="2" y2="2" width="0.2" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.7" width="0.2" layer="21"/>
+<wire x1="-1.7" y1="-2" x2="-2" y2="-2" width="0.2" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.7" width="0.2" layer="21"/>
+<wire x1="2" y1="-1.7" x2="2" y2="-2" width="0.2" layer="21"/>
+<wire x1="2" y1="-2" x2="1.7" y2="-2" width="0.2" layer="21"/>
+<wire x1="-2.7" y1="2.65" x2="2.7" y2="2.65" width="0.05" layer="39"/>
+<wire x1="2.7" y1="2.65" x2="2.7" y2="-2.65" width="0.05" layer="39"/>
+<wire x1="2.7" y1="-2.65" x2="-2.7" y2="-2.65" width="0.05" layer="39"/>
+<wire x1="-2.7" y1="-2.65" x2="-2.7" y2="2.65" width="0.05" layer="39"/>
+<text x="-2.00376875" y="3.00565" size="1.272390625" layer="25">&gt;NAME</text>
+<text x="-2.00306875" y="-4.006140625" size="1.27195" layer="27">&gt;VALUE</text>
+<circle x="-3" y="1.3" radius="0.14141875" width="0" layer="21"/>
+<smd name="1" x="-2" y="1.25" dx="0.8" dy="0.35" layer="1"/>
+<smd name="2" x="-2" y="0.75" dx="0.8" dy="0.35" layer="1"/>
+<smd name="3" x="-2" y="0.25" dx="0.8" dy="0.35" layer="1"/>
+<smd name="4" x="-2" y="-0.25" dx="0.8" dy="0.35" layer="1"/>
+<smd name="5" x="-2" y="-0.75" dx="0.8" dy="0.35" layer="1"/>
+<smd name="6" x="-2" y="-1.25" dx="0.8" dy="0.35" layer="1"/>
+<smd name="7" x="-1.25" y="-2" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="8" x="-0.75" y="-2" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="9" x="-0.25" y="-2" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="10" x="0.25" y="-2" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="11" x="0.75" y="-2" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="12" x="1.25" y="-2" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="13" x="2" y="-1.25" dx="0.8" dy="0.35" layer="1" rot="R180"/>
+<smd name="14" x="2" y="-0.75" dx="0.8" dy="0.35" layer="1" rot="R180"/>
+<smd name="15" x="2" y="-0.25" dx="0.8" dy="0.35" layer="1" rot="R180"/>
+<smd name="16" x="2" y="0.25" dx="0.8" dy="0.35" layer="1" rot="R180"/>
+<smd name="17" x="2" y="0.75" dx="0.8" dy="0.35" layer="1" rot="R180"/>
+<smd name="18" x="2" y="1.25" dx="0.8" dy="0.35" layer="1" rot="R180"/>
+<smd name="19" x="1.25" y="2" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="20" x="0.75" y="2" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="21" x="0.25" y="2" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="22" x="-0.25" y="2" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="23" x="-0.75" y="2" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="24" x="-1.25" y="2" dx="0.8" dy="0.35" layer="1" rot="R270"/>
+<smd name="25" x="0" y="0" dx="2.75" dy="2.65" layer="1" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPU-6050">
+<wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<text x="-12.7093" y="16.5221" size="1.7793" layer="95">&gt;NAME</text>
+<text x="-12.7276" y="-20.3642" size="1.781859375" layer="96">&gt;VALUE</text>
+<pin name="CLKIN" x="-15.24" y="12.7" length="short" direction="in"/>
+<pin name="AUX_CL" x="-15.24" y="10.16" length="short" direction="in"/>
+<pin name="AD0" x="-15.24" y="7.62" length="short" direction="in"/>
+<pin name="FSYNC" x="-15.24" y="2.54" length="short" direction="in"/>
+<pin name="SCL" x="-15.24" y="-2.54" length="short" direction="in" function="clk"/>
+<pin name="AUX_DA" x="-15.24" y="-10.16" length="short"/>
+<pin name="SDA" x="-15.24" y="-5.08" length="short"/>
+<pin name="EXP" x="15.24" y="-12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="INT" x="15.24" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="REGOUT" x="15.24" y="-7.62" length="short" direction="pas" rot="R180"/>
+<pin name="CPOUT" x="15.24" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="RESV" x="15.24" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="VLOGIC" x="15.24" y="10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD" x="15.24" y="12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="RESV@1" x="15.24" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="RESV@2" x="15.24" y="0" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU-6050" prefix="U">
+<description>MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS MotionTracking™ Devices</description>
+<gates>
+<gate name="G$1" symbol="MPU-6050" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN50P400X400X95-25N">
+<connects>
+<connect gate="G$1" pin="AD0" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="6"/>
+<connect gate="G$1" pin="CLKIN" pad="1"/>
+<connect gate="G$1" pin="CPOUT" pad="20"/>
+<connect gate="G$1" pin="EXP" pad="25"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV" pad="22"/>
+<connect gate="G$1" pin="RESV@1" pad="19"/>
+<connect gate="G$1" pin="RESV@2" pad="21"/>
+<connect gate="G$1" pin="SCL" pad="23"/>
+<connect gate="G$1" pin="SDA" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VLOGIC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="IMU ACCEL/GYRO 3-AXIS I2C 24QFN"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="1428-1007-1-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/tdk-invensense/MPU-6050/1428-1007-1-ND/4038010?WT.z_cid=ref_snapeda&amp;utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=buynow"/>
+<attribute name="MF" value="TDK"/>
+<attribute name="MP" value="MPU-6050"/>
+<attribute name="PACKAGE" value="QFN-24 InvenSense"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8563,6 +8735,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="100μF"/>
 <part name="R_VD1" library="rcl" deviceset="R-US_" device="R0603" value="100kΩ"/>
 <part name="R_VD2" library="rcl" deviceset="R-US_" device="R0603" value="100kΩ"/>
+<part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
+<part name="U2" library="MPU-6050" deviceset="MPU-6050" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8582,6 +8756,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C1" gate="G$1" x="93.98" y="81.28"/>
 <instance part="R_VD1" gate="G$1" x="53.34" y="81.28"/>
 <instance part="R_VD2" gate="G$1" x="53.34" y="73.66"/>
+<instance part="U$2" gate="G$1" x="-12.7" y="15.24"/>
+<instance part="U2" gate="G$1" x="132.08" y="78.74"/>
 </instances>
 <busses>
 </busses>
