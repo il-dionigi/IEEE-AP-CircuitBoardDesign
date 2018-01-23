@@ -8988,7 +8988,10 @@ by exp-lbrs.ulp</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C_DEC" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="0.1μF"/>
 <part name="U$2" library="TI-LM2665M6" deviceset="TI-LM2665" device="M6"/>
-<part name="U$4" library="quad" deviceset="JST_CONNECTOR_FEMALE" device=""/>
+<part name="MOTOR1" library="quad" deviceset="JST_CONNECTOR_FEMALE" device=""/>
+<part name="MOTOR2" library="quad" deviceset="JST_CONNECTOR_FEMALE" device=""/>
+<part name="MOTOR3" library="quad" deviceset="JST_CONNECTOR_FEMALE" device=""/>
+<part name="MOTOR4" library="quad" deviceset="JST_CONNECTOR_FEMALE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9016,7 +9019,10 @@ by exp-lbrs.ulp</description>
 <instance part="GND1" gate="1" x="195.58" y="-7.62"/>
 <instance part="C_DEC" gate="G$1" x="195.58" y="5.08"/>
 <instance part="U$2" gate="G$1" x="-10.16" y="15.24"/>
-<instance part="U$4" gate="G$1" x="63.5" y="-12.7"/>
+<instance part="MOTOR1" gate="G$1" x="63.5" y="-12.7"/>
+<instance part="MOTOR2" gate="G$1" x="83.82" y="-12.7"/>
+<instance part="MOTOR3" gate="G$1" x="104.14" y="-12.7"/>
+<instance part="MOTOR4" gate="G$1" x="124.46" y="-12.7"/>
 </instances>
 <busses>
 </busses>
