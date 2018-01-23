@@ -9103,6 +9103,8 @@ by exp-lbrs.ulp</description>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="U1" library="ATMEGA328P-AU" deviceset="ATMEGA328P-AU" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9114,14 +9116,14 @@ by exp-lbrs.ulp</description>
 <instance part="R_LED2" gate="G$1" x="25.4" y="73.66"/>
 <instance part="R_LED3" gate="G$1" x="40.64" y="81.28"/>
 <instance part="R_LED4" gate="G$1" x="40.64" y="73.66"/>
-<instance part="D1" gate="G$1" x="68.58" y="81.28"/>
-<instance part="D2" gate="G$1" x="81.28" y="81.28"/>
-<instance part="D3" gate="G$1" x="81.28" y="71.12"/>
-<instance part="D4" gate="G$1" x="68.58" y="71.12"/>
+<instance part="D1" gate="G$1" x="53.34" y="83.82"/>
+<instance part="D2" gate="G$1" x="66.04" y="83.82"/>
+<instance part="D3" gate="G$1" x="66.04" y="73.66"/>
+<instance part="D4" gate="G$1" x="53.34" y="73.66"/>
 <instance part="C_BAT" gate="G$1" x="93.98" y="81.28"/>
-<instance part="R_VD1" gate="G$1" x="53.34" y="81.28"/>
-<instance part="R_VD2" gate="G$1" x="53.34" y="73.66"/>
-<instance part="U2" gate="G$1" x="-6.35" y="-26.67"/>
+<instance part="R_VD1" gate="G$1" x="107.95" y="81.28"/>
+<instance part="R_VD2" gate="G$1" x="107.95" y="73.66"/>
+<instance part="U2" gate="G$1" x="180.34" y="15.24"/>
 <instance part="C_OSC1" gate="G$1" x="58.42" y="29.21" rot="R270"/>
 <instance part="C_OSC2" gate="G$1" x="58.42" y="19.05" rot="R270"/>
 <instance part="CRYSTAL" gate="G$1" x="71.12" y="24.13" rot="R90"/>
@@ -9150,6 +9152,8 @@ by exp-lbrs.ulp</description>
 <instance part="P+4" gate="VCC" x="73.66" y="-77.47" rot="R270"/>
 <instance part="U1" gate="A" x="123.19" y="-3.81"/>
 <instance part="P+5" gate="VCC" x="49.53" y="24.13" rot="R90"/>
+<instance part="P+6" gate="VCC" x="203.2" y="29.21" rot="R270"/>
+<instance part="GND6" gate="1" x="199.39" y="0" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9286,6 +9290,11 @@ by exp-lbrs.ulp</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="33.02" y1="-64.77" x2="27.94" y2="-64.77" width="0.1524" layer="91"/>
 <junction x="33.02" y="-64.77"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="195.58" y1="0" x2="196.85" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -9485,6 +9494,24 @@ by exp-lbrs.ulp</description>
 <wire x1="88.9" y1="17.78" x2="88.9" y2="3.81" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="(PCINT6/XTAL1/TOSC1)_PB6"/>
 <wire x1="88.9" y1="3.81" x2="92.71" y2="3.81" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PC5_(ADC5/SCL/PCINT13)"/>
+<wire x1="153.67" y1="13.97" x2="160.02" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="13.97" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SCL"/>
+<wire x1="160.02" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PC4_(ADC4/SDA/PCINT12)"/>
+<wire x1="153.67" y1="8.89" x2="160.02" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="8.89" x2="160.02" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SDA"/>
+<wire x1="160.02" y1="10.16" x2="165.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
