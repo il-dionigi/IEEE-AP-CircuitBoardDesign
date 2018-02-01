@@ -10253,21 +10253,6 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <label x="63.5" y="-43.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="-22.225" y1="-71.12" x2="-22.352" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="23.495" y1="-71.12" x2="23.368" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<wire x1="69.215" y1="-71.12" x2="69.088" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="AREF" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="AREF"/>
