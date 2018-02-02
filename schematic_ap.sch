@@ -333,8 +333,8 @@ by exp-lbrs.ulp</description>
 <pad name="P$6" x="6.35" y="0" drill="1.016" diameter="1.8796"/>
 <text x="-7.874" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">GRN</text>
 <text x="9.144" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">BLK</text>
-<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
-<text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
+<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
+<text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
 <text x="0.254" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">VCC</text>
 <text x="-7.366" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">DTR</text>
 <text x="5.334" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
@@ -494,8 +494,8 @@ by exp-lbrs.ulp</description>
 <pin name="CTS" x="-5.08" y="-5.08" visible="pin" length="middle"/>
 <pin name="DTR" x="-5.08" y="5.08" visible="pin" length="middle"/>
 <pin name="GND" x="-5.08" y="-7.62" visible="pin" length="middle"/>
-<pin name="RXI" x="-5.08" y="0" visible="pin" length="middle"/>
-<pin name="TXO" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="TXO" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="RXI" x="-5.08" y="2.54" visible="pin" length="middle"/>
 <pin name="VCC" x="-5.08" y="-2.54" visible="pin" length="middle"/>
 <text x="0" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
@@ -642,8 +642,8 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="CTS" pad="P$5"/>
 <connect gate="G$1" pin="DTR" pad="P$1"/>
 <connect gate="G$1" pin="GND" pad="P$6"/>
-<connect gate="G$1" pin="RXI" pad="P$3"/>
-<connect gate="G$1" pin="TXO" pad="P$2"/>
+<connect gate="G$1" pin="RXI" pad="P$2"/>
+<connect gate="G$1" pin="TXO" pad="P$3"/>
 <connect gate="G$1" pin="VCC" pad="P$4"/>
 </connects>
 <technologies>
@@ -655,8 +655,8 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="CTS" pad="5"/>
 <connect gate="G$1" pin="DTR" pad="1"/>
 <connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="RXI" pad="3"/>
-<connect gate="G$1" pin="TXO" pad="2"/>
+<connect gate="G$1" pin="RXI" pad="2"/>
+<connect gate="G$1" pin="TXO" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
@@ -10135,8 +10135,8 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="TXO"/>
-<wire x1="58.42" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
-<label x="50.8" y="48.26" size="1.778" layer="95"/>
+<wire x1="58.42" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="50.8" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -10147,8 +10147,8 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="RXI"/>
-<wire x1="58.42" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
-<label x="50.8" y="45.72" size="1.778" layer="95"/>
+<wire x1="58.42" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
+<label x="50.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VDIV" class="0">

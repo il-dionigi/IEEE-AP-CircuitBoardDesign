@@ -9427,7 +9427,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="U1" library="quad" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="M1" library="quad" deviceset="WIRELESS-NRF24L01" device=""/>
 <part name="DM1" library="quad" deviceset="DB2W40300L" device=""/>
-<part name="C1RF" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100 uF"/>
+<part name="C1RF" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10 uF"/>
 <part name="C2RF" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100 nF"/>
 <part name="C1DEC" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100 nF"/>
 <part name="C2DEC" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100 nF"/>
