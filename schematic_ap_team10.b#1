@@ -2861,11 +2861,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="C3DEC" library="rcl" package="C0603" value="100 nF" x="17.018" y="13.716" rot="R90">
 <attribute name="SPICEPREFIX" value="C" x="17.018" y="13.716" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="CBAT" library="rcl" package="C0805" value="100 uF" x="21.463" y="24.892" rot="R90">
-<attribute name="SPICEPREFIX" value="C" x="21.463" y="24.892" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="CBAT" library="rcl" package="C0805" value="100 uF" x="17.399" y="24.384">
+<attribute name="SPICEPREFIX" value="C" x="17.399" y="24.384" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CRES" library="rcl" package="C0603" value="100 nF" x="21.844" y="26.162" rot="MR270">
-<attribute name="SPICEPREFIX" value="C" x="21.844" y="26.162" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="CRES" library="rcl" package="C0603" value="100 nF" x="22.479" y="25.908" rot="R270">
+<attribute name="SPICEPREFIX" value="C" x="22.479" y="25.908" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D1LED" library="LEDs" package="LED-0603" value="RED" x="6.096" y="1.778" rot="R180">
 <attribute name="PROD_ID" value="DIO-00819" x="6.096" y="1.778" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2999,6 +2999,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="21.336" y="7.493" extent="1-16" drill="0.35"/>
 <wire x1="21.336" y1="7.493" x2="20.794" y2="6.951" width="0.762" layer="1"/>
 <wire x1="20.794" y1="6.951" x2="20.254" y2="6.951" width="0.762" layer="1"/>
+<wire x1="18.349" y1="24.384" x2="18.349" y2="26.112" width="0.762" layer="1"/>
 <wire x1="18.349" y1="26.112" x2="18.399" y2="26.162" width="0.762" layer="1"/>
 <wire x1="40.894" y1="2.628" x2="43.649" y2="2.628" width="0.762" layer="16"/>
 <wire x1="43.649" y1="2.628" x2="45.085" y2="4.064" width="0.762" layer="16"/>
@@ -3176,6 +3177,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="25.146" y1="24.13" x2="24.003" y2="24.13" width="0.762" layer="16"/>
 <wire x1="24.003" y1="24.13" x2="23.368" y2="24.765" width="0.762" layer="16"/>
 <wire x1="23.368" y1="24.765" x2="23.368" y2="26.543" width="0.762" layer="16"/>
+<wire x1="23.368" y1="26.543" x2="18.288" y2="26.543" width="0.762" layer="16"/>
 <wire x1="18.288" y1="26.543" x2="18.161" y2="26.67" width="0.762" layer="16"/>
 <polygon width="0.1524" layer="16">
 <vertex x="26.162" y="2.413"/>
@@ -3352,14 +3354,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="18.161" y="26.797"/>
 <vertex x="17.78" y="26.416"/>
 </polygon>
-<wire x1="18.399" y1="26.162" x2="19.542" y2="27.178" width="0.762" layer="16"/>
-<wire x1="19.542" y1="27.178" x2="20.574" y2="27.178" width="0.762" layer="16"/>
-<via x="20.574" y="27.178" extent="1-16" drill="0.35"/>
-<wire x1="20.574" y1="27.178" x2="22.606" y2="27.178" width="0.762" layer="1"/>
-<wire x1="22.606" y1="27.178" x2="23.368" y2="26.543" width="0.762" layer="1"/>
-<via x="23.368" y="26.543" extent="1-16" drill="0.35"/>
-<wire x1="18.399" y1="26.162" x2="18.719" y2="25.842" width="0.762" layer="1"/>
-<wire x1="18.719" y1="25.842" x2="21.463" y2="25.842" width="0.762" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$3" pad="5"/>
@@ -3610,20 +3604,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="D4LED" pad="A"/>
 <wire x1="6.096" y1="25.285" x2="6.489" y2="25.285" width="0.3048" layer="1"/>
 <wire x1="8.636" y1="27.432" x2="6.489" y2="25.285" width="0.3048" layer="1"/>
-<wire x1="16.637" y1="27.432" x2="16.51" y2="27.432" width="0.3048" layer="1"/>
-<wire x1="16.51" y1="27.432" x2="8.636" y2="27.432" width="0.3048" layer="1"/>
-<wire x1="16.637" y1="27.432" x2="16.891" y2="27.432" width="0.3048" layer="1"/>
-<wire x1="16.891" y1="27.432" x2="17.399" y2="26.924" width="0.3048" layer="1"/>
-<wire x1="17.399" y1="26.924" x2="17.399" y2="25.4" width="0.3048" layer="1"/>
-<wire x1="17.399" y1="25.4" x2="17.907" y2="24.892" width="0.3048" layer="1"/>
-<wire x1="17.907" y1="24.892" x2="19.431" y2="24.892" width="0.3048" layer="1"/>
-<via x="19.431" y="24.892" extent="1-16" drill="0.35"/>
-<wire x1="19.431" y1="24.892" x2="20.32" y2="24.892" width="0.3048" layer="16"/>
-<wire x1="20.32" y1="24.892" x2="21.336" y2="23.876" width="0.3048" layer="16"/>
-<wire x1="21.336" y1="23.876" x2="21.336" y2="22.606" width="0.3048" layer="16"/>
-<via x="21.336" y="22.606" extent="1-16" drill="0.35"/>
-<wire x1="21.336" y1="22.606" x2="21.336" y2="19.5386" width="0.3048" layer="1"/>
-<wire x1="21.336" y1="19.5386" x2="21.33" y2="19.5326" width="0.3048" layer="1"/>
+<wire x1="21.33" y1="19.5326" x2="21.33" y2="26.803" width="0.3048" layer="1"/>
+<wire x1="21.33" y1="26.803" x2="20.701" y2="27.432" width="0.3048" layer="1"/>
+<wire x1="20.701" y1="27.432" x2="8.636" y2="27.432" width="0.3048" layer="1"/>
 </signal>
 <signal name="LED3">
 <contactref element="D3LED" pad="A"/>
@@ -3761,6 +3744,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="25.4" y1="23.114" x2="24.638" y2="23.114" width="0.3048" layer="1"/>
 <wire x1="24.892" y1="22.606" x2="25.4" y2="23.114" width="0.3048" layer="1"/>
 <wire x1="24.892" y1="22.606" x2="23.876" y2="22.606" width="0.3048" layer="16"/>
+<wire x1="23.876" y1="22.606" x2="22.479" y2="24.003" width="0.3048" layer="16"/>
+<via x="22.479" y="24.003" extent="1-16" drill="0.35"/>
+<wire x1="22.479" y1="24.003" x2="22.479" y2="25.058" width="0.3048" layer="1"/>
 <wire x1="24.638" y1="23.114" x2="23.73" y2="22.206" width="0.3048" layer="1"/>
 <wire x1="23.73" y1="22.206" x2="23.73" y2="19.5326" width="0.3048" layer="1"/>
 <wire x1="30.696" y1="22.697" x2="32.603" y2="22.697" width="0.3048" layer="1"/>
@@ -3768,16 +3754,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="30.696" y1="22.697" x2="29.754" y2="22.697" width="0.3048" layer="1"/>
 <wire x1="29.337" y1="23.114" x2="25.4" y2="23.114" width="0.3048" layer="1"/>
 <wire x1="29.754" y1="22.697" x2="29.337" y2="23.114" width="0.3048" layer="1"/>
-<wire x1="21.844" y1="24.638" x2="21.844" y2="25.312" width="0.3048" layer="16"/>
-<wire x1="23.876" y1="22.606" x2="21.844" y2="24.638" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="J1" pad="P$1"/>
 <contactref element="CRES" pad="1"/>
-<wire x1="21.844" y1="27.012" x2="22.137" y2="27.305" width="0.3048" layer="16"/>
-<wire x1="22.137" y1="27.305" x2="23.749" y2="27.305" width="0.3048" layer="16"/>
-<wire x1="23.749" y1="27.305" x2="24.892" y2="26.162" width="0.3048" layer="16"/>
-<wire x1="24.892" y1="26.162" x2="24.892" y2="25.908" width="0.3048" layer="16"/>
+<wire x1="22.479" y1="26.758" x2="24.042" y2="26.758" width="0.3048" layer="1"/>
+<wire x1="24.042" y1="26.758" x2="24.892" y2="25.908" width="0.3048" layer="1"/>
 </signal>
 <signal name="LED2">
 <contactref element="D2LED" pad="A"/>
@@ -3979,6 +3961,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="14.012" y1="3.963" x2="14.478" y2="4.429" width="0.762" layer="1"/>
 <wire x1="18.923" y1="4.979" x2="20.024" y2="4.979" width="0.762" layer="16"/>
 <wire x1="20.024" y1="4.979" x2="20.574" y2="4.429" width="0.762" layer="16"/>
+<wire x1="16.449" y1="24.384" x2="16.449" y2="26.112" width="0.762" layer="1"/>
 <wire x1="16.449" y1="26.112" x2="16.399" y2="26.162" width="0.762" layer="1"/>
 <wire x1="15.24" y1="25.527" x2="15.24" y2="23.241" width="0.762" layer="1"/>
 <wire x1="15.24" y1="25.527" x2="15.825" y2="26.112" width="0.762" layer="1"/>
@@ -4044,10 +4027,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="12.192" y="26.924"/>
 <vertex x="10.668" y="26.924"/>
 </polygon>
-<wire x1="16.399" y1="26.162" x2="16.399" y2="25.003" width="0.762" layer="1"/>
-<wire x1="16.399" y1="25.003" x2="17.399" y2="24.003" width="0.762" layer="1"/>
-<wire x1="17.399" y1="24.003" x2="20.894" y2="24.003" width="0.762" layer="1"/>
-<wire x1="20.894" y1="24.003" x2="21.463" y2="23.942" width="0.762" layer="1"/>
 </signal>
 <signal name="AREF">
 <contactref element="U1" pad="20"/>
