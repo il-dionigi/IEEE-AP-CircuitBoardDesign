@@ -4108,10 +4108,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="29.718" y1="9.652" x2="32.766" y2="12.7" width="0.762" layer="16"/>
 <wire x1="39.751" y1="20.066" x2="39.751" y2="21.717" width="0.762" layer="1"/>
 <wire x1="39.751" y1="21.717" x2="39.243" y2="22.225" width="0.762" layer="1"/>
-<wire x1="39.243" y1="22.225" x2="36.322" y2="22.225" width="0.762" layer="1"/>
-<wire x1="35.5788" y1="21.4818" x2="35.5788" y2="20.6756" width="0.762" layer="1"/>
-<wire x1="36.322" y1="22.225" x2="35.5788" y2="21.4818" width="0.762" layer="1"/>
-<wire x1="35.5788" y1="20.6756" x2="35.566" y2="20.6756" width="0" layer="19" extent="1-1"/>
+<wire x1="36.322" y1="22.225" x2="39.243" y2="22.225" width="0.762" layer="1"/>
+<wire x1="35.566" y1="20.6756" x2="35.566" y2="21.469" width="0.7366" layer="1"/>
+<wire x1="35.566" y1="21.469" x2="36.322" y2="22.225" width="0.762" layer="1"/>
 </signal>
 <signal name="INT">
 <contactref element="U1" pad="2"/>
