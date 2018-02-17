@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -424,10 +424,9 @@ by exp-lbrs.ulp</description>
 <pad name="P$4" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$5" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$6" x="6.35" y="0" drill="1.016" diameter="1.8796"/>
-<text x="-7.874" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">GRN</text>
 <text x="9.144" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">BLK</text>
-<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
-<text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
+<text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
+<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
 <text x="0.254" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">VCC</text>
 <text x="-7.366" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">DTR</text>
 <text x="5.334" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
@@ -4720,8 +4719,8 @@ Source: VISHAY wscwsn.pdf</description>
 <pin name="CTS" x="-5.08" y="-5.08" visible="pin" length="middle"/>
 <pin name="DTR" x="-5.08" y="5.08" visible="pin" length="middle"/>
 <pin name="GND" x="-5.08" y="-7.62" visible="pin" length="middle"/>
-<pin name="RXI" x="-5.08" y="0" visible="pin" length="middle"/>
-<pin name="TXO" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="RXI" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="TXO" x="-5.08" y="0" visible="pin" length="middle"/>
 <pin name="VCC" x="-5.08" y="-2.54" visible="pin" length="middle"/>
 <text x="0" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
@@ -5090,8 +5089,8 @@ Source: VISHAY wscwsn.pdf</description>
 <connect gate="G$1" pin="CTS" pad="P$5"/>
 <connect gate="G$1" pin="DTR" pad="P$1"/>
 <connect gate="G$1" pin="GND" pad="P$6"/>
-<connect gate="G$1" pin="RXI" pad="P$3"/>
-<connect gate="G$1" pin="TXO" pad="P$2"/>
+<connect gate="G$1" pin="RXI" pad="P$2"/>
+<connect gate="G$1" pin="TXO" pad="P$3"/>
 <connect gate="G$1" pin="VCC" pad="P$4"/>
 </connects>
 <technologies>

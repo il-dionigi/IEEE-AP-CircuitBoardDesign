@@ -332,10 +332,9 @@ by exp-lbrs.ulp</description>
 <pad name="P$4" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$5" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$6" x="6.35" y="0" drill="1.016" diameter="1.8796"/>
-<text x="-7.874" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">GRN</text>
 <text x="9.144" y="-0.889" size="1.27" layer="21" font="vector" ratio="15" rot="R90">BLK</text>
-<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
 <text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
+<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
 <text x="0.254" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">VCC</text>
 <text x="-7.366" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">DTR</text>
 <text x="5.334" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
@@ -495,8 +494,8 @@ by exp-lbrs.ulp</description>
 <pin name="CTS" x="-5.08" y="-5.08" visible="pin" length="middle"/>
 <pin name="DTR" x="-5.08" y="5.08" visible="pin" length="middle"/>
 <pin name="GND" x="-5.08" y="-7.62" visible="pin" length="middle"/>
-<pin name="TXO" x="-5.08" y="0" visible="pin" length="middle"/>
 <pin name="RXI" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="TXO" x="-5.08" y="0" visible="pin" length="middle"/>
 <pin name="VCC" x="-5.08" y="-2.54" visible="pin" length="middle"/>
 <text x="0" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
@@ -656,8 +655,8 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="CTS" pad="5"/>
 <connect gate="G$1" pin="DTR" pad="1"/>
 <connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="RXI" pad="2"/>
-<connect gate="G$1" pin="TXO" pad="3"/>
+<connect gate="G$1" pin="RXI" pad="3"/>
+<connect gate="G$1" pin="TXO" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
@@ -7688,58 +7687,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ABLS_B4_T">
-<packages>
-<package name="SOT-23">
-<smd name="1" x="-4.7498" y="0" dx="5.588" dy="2.1082" layer="1"/>
-<smd name="2" x="4.7498" y="0" dx="5.588" dy="2.1082" layer="1"/>
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="51"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="51"/>
-<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.2032" layer="21"/>
-<text x="-2.794" y="1.524" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.794" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ABLS">
-<pin name="1" x="-5.08" y="0" length="point" rot="R180"/>
-<pin name="2" x="5.08" y="0" length="point"/>
-<text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-1.524" y1="2.032" x2="-1.524" y2="-2.032" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.032" x2="1.524" y2="-2.032" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.032" x2="1.524" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="2.032" x2="-1.524" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ABLS">
-<gates>
-<gate name="G$1" symbol="ABLS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="B4-T" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="LEDs">
 <packages>
 <package name="LED-0603">
@@ -8125,6 +8072,62 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="NX3225GD">
+<packages>
+<package name="2-SMD">
+<smd name="1" x="-0.95" y="0" dx="1.5" dy="2.7" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.5" dy="2.7" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.1524" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.1524" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.1524" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="1.143" x2="-1.905" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.524" x2="1.905" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.524" x2="1.905" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-1.143" x2="-1.905" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-1.524" x2="1.905" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.524" x2="1.905" y2="-1.143" width="0.2032" layer="21"/>
+<text x="-3.81" y="2.54" size="1.778" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NX3225GD">
+<wire x1="-1.524" y1="2.032" x2="-1.524" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-2.032" x2="1.524" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.032" x2="1.524" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="2.032" x2="-1.524" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pin" length="point"/>
+<pin name="2" x="5.08" y="0" visible="pin" length="point" rot="R180"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NX3225GD">
+<gates>
+<gate name="G$1" symbol="NX3225GD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8144,14 +8147,13 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="C2DEC" library="rcl" deviceset="C-US" device="C0603" value="100 nF"/>
 <part name="C3DEC" library="rcl" deviceset="C-US" device="C0603" value="100 nF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="C2OSC" library="rcl" deviceset="C-US" device="C0603" value="30 pF"/>
-<part name="C1OSC" library="rcl" deviceset="C-US" device="C0603" value="30 pF"/>
+<part name="C2OSC" library="rcl" deviceset="C-US" device="C0603" value="10 pF"/>
+<part name="C1OSC" library="rcl" deviceset="C-US" device="C0603" value="10 pF"/>
 <part name="U$3" library="LM2776" deviceset="LM2776" device="DBVR"/>
 <part name="C1CP" library="rcl" deviceset="C-US" device="C0603" value="1 uF"/>
 <part name="C2CP" library="rcl" deviceset="C-US" device="C0603" value="2.2 uF"/>
 <part name="C3CP" library="rcl" deviceset="C-US" device="C0603" value="2.2 uF"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="OSC_8MHZ" library="ABLS_B4_T" deviceset="ABLS" device="B4-T"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="quad" deviceset="JST_CONNECTOR_FEMALE" device=""/>
 <part name="RM1" library="resistor" deviceset="R-US_" device="R0603" value="10 kΩ"/>
@@ -8200,6 +8202,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="OSC_8MHZ" library="NX3225GD" deviceset="NX3225GD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8222,7 +8225,6 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <instance part="C2CP" gate="G$1" x="-25.4" y="76.2"/>
 <instance part="C3CP" gate="G$1" x="25.4" y="76.2"/>
 <instance part="GND3" gate="1" x="25.4" y="66.04"/>
-<instance part="OSC_8MHZ" gate="G$1" x="-55.88" y="-22.86"/>
 <instance part="GND6" gate="1" x="-68.58" y="-73.66"/>
 <instance part="U$4" gate="G$1" x="-86.36" y="-50.8" rot="MR270"/>
 <instance part="RM1" gate="G$1" x="-60.96" y="-71.12" rot="R90"/>
@@ -8271,6 +8273,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <instance part="GND16" gate="1" x="-15.24" y="-81.28"/>
 <instance part="GND17" gate="1" x="30.48" y="-81.28"/>
 <instance part="GND18" gate="1" x="76.2" y="-81.28"/>
+<instance part="OSC_8MHZ" gate="G$1" x="-55.88" y="-22.86"/>
 </instances>
 <busses>
 </busses>
@@ -8521,12 +8524,12 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="C2OSC" gate="G$1" pin="2"/>
-<wire x1="-48.26" y1="-22.86" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-22.86" x2="-48.26" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-25.4" x2="-48.26" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-48.26" y="-25.4" size="1.778" layer="95" rot="R270"/>
 <pinref part="OSC_8MHZ" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="-22.86" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-22.86" x2="-48.26" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-22.86"/>
-<label x="-48.26" y="-25.4" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="TOSC2" class="0">
@@ -8538,11 +8541,11 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <segment>
 <pinref part="C1OSC" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="-25.4" x2="-63.5" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="-22.86" x2="-63.5" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-63.5" y="-25.4" size="1.778" layer="95" rot="R270"/>
 <pinref part="OSC_8MHZ" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="-22.86" x2="-63.5" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-22.86" x2="-63.5" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="-63.5" y="-22.86"/>
-<label x="-63.5" y="-25.4" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="RESET" class="0">
