@@ -24,16 +24,16 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -2911,22 +2911,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="DM4" library="quad" package="MINI2-F3-B" value="DB2W40300L" x="36.703" y="3.175" smashed="yes" rot="MR180"/>
 <element name="J1" library="quad" package="FTDI_DEVICE_SIDE" value="FTDI_DEVICE" x="34.671" y="26.035" smashed="yes" rot="R180"/>
 <element name="M1" library="quad" package="WIRELESS-NRF24L01" value="WIRELESS-NRF24L01" x="32.385" y="16.51" smashed="yes" rot="R180"/>
-<element name="R1LED" library="resistor" package="R0603" value="150 Ω" x="6.35" y="2.032" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="5.207" y="1.397" size="0.6096" layer="28" rot="MR180"/>
+<element name="R1LED" library="resistor" package="R0603" value="65 Ω" x="6.35" y="2.032" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="5.461" y="1.397" size="0.6096" layer="28" rot="MR180"/>
 </element>
 <element name="R1VD" library="resistor" package="R0603" value="10 kΩ" x="14.732" y="6.35" smashed="yes" rot="R90">
 <attribute name="VALUE" x="16.002" y="5.207" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="R2LED" library="resistor" package="R0603" value="150 Ω" x="44.069" y="4.064" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="42.926" y="3.429" size="0.6096" layer="28" rot="MR180"/>
+<element name="R2LED" library="resistor" package="R0603" value="65 Ω" x="44.069" y="4.064" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="43.18" y="3.429" size="0.6096" layer="28" rot="MR180"/>
 </element>
 <element name="R2VD" library="resistor" package="R0603" value="10 kΩ" x="9.525" y="6.604" smashed="yes" rot="R270">
 <attribute name="VALUE" x="8.89" y="5.461" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="R3LED" library="resistor" package="R0603" value="150 Ω" x="44.069" y="24.13" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="42.926" y="25.4" size="0.6096" layer="28" rot="MR180"/>
+<element name="R3LED" library="resistor" package="R0603" value="65 Ω" x="44.069" y="24.13" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="43.18" y="25.4" size="0.6096" layer="28" rot="MR180"/>
 </element>
-<element name="R4LED" library="resistor" package="R0603" value="150 Ω" x="6.35" y="26.035" smashed="yes" rot="MR0">
+<element name="R4LED" library="resistor" package="R0603" value="65 Ω" x="6.35" y="26.035" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="7.366" y="26.67" size="0.6096" layer="28" rot="MR0"/>
 </element>
 <element name="R5" library="resistor" package="R0603" value="10 kΩ" x="19.939" y="25.527" smashed="yes" rot="R90">

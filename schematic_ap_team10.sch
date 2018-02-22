@@ -8161,13 +8161,13 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <part name="D2LED" library="LEDs" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="D3LED" library="LEDs" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D4LED" library="LEDs" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="R4LED" library="resistor" deviceset="R-US_" device="R0603" value="150 Ω"/>
+<part name="R4LED" library="resistor" deviceset="R-US_" device="R0603" value="65 Ω"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R2LED" library="resistor" deviceset="R-US_" device="R0603" value="150 Ω"/>
+<part name="R2LED" library="resistor" deviceset="R-US_" device="R0603" value="65 Ω"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R3LED" library="resistor" deviceset="R-US_" device="R0603" value="150 Ω"/>
+<part name="R3LED" library="resistor" deviceset="R-US_" device="R0603" value="65 Ω"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R1LED" library="resistor" deviceset="R-US_" device="R0603" value="150 Ω"/>
+<part name="R1LED" library="resistor" deviceset="R-US_" device="R0603" value="65 Ω"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="quad" deviceset="FTDI_DEVICE" device=""/>
 <part name="DM2" library="quad" deviceset="DB2W40300L" device=""/>
